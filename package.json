@@ -1,0 +1,22 @@
+{
+  "name": "trackactivityapi",
+  "version": "1.0.0",
+  "description": "REST API for tracking user activity",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salilmalik/TrackActivityAPI.git"
+  },
+  "author": "Salil Malik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/salilmalik/TrackActivityAPI/issues"
+  },
+  "homepage": "https://github.com/salilmalik/TrackActivityAPI#readme",
+  "dependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
