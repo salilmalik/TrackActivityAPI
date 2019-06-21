@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/salilmalik/TrackActivityAPI#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "mongoose": "^5.6.0",
     "nodemon": "^1.19.1"
   }
 }
