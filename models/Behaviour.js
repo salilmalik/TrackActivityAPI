@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-BehaviourSchema = new Schema({
+var BehaviourSchema = new Schema({
   accountName: String,
   event: String,
   category: String,

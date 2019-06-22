@@ -1,8 +1,7 @@
 const express = require("express");
+const behaviourService = require("../services/behaviourService");
 const router = express.Router();
 
-router.get("/", function(req, res){
-    res.send("get Behaviour");
-});
+
 
 module.exports = router;

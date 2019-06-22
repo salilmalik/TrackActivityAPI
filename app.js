@@ -1,12 +1,11 @@
 const express = require("express");
 const bodyparser = require("body-parser");
-const userRoute = require("./routes/userapi");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const config = require("./config");
 const app = express();
-const userapi = require("./routes/userapi");
-const behaviourapi = require("./routes/behaviourapi");
+const userController = require("./controllers/userController");
+const behaviourController = require("./controllers/behaviourController");
 
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(bodyparser.json());
@@ -16,9 +15,9 @@ app.get("/", (req, res, next) => {
   res.json("Get called");
 });
 
-app.use("/user", userapi);
+app.use("/user", userController);
 
-app.use("/behaviour", behaviourapi);
+app.use("/behaviour", behaviourController);
 
 mongoose.connect(config.DBConnectionString, { useNewUrlParser: true });
 
