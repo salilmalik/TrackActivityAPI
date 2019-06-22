@@ -19,6 +19,8 @@ app.use("/user", userController);
 
 app.use("/behaviour", behaviourController);
 
+mongoose.set('useCreateIndex', true)
+
 mongoose.connect(config.DBConnectionString, { useNewUrlParser: true });
 
 mongoose.connection.on("open", function() {
